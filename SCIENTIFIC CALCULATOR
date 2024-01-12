@@ -29,7 +29,7 @@ int main() {
 
     return 0;
 }
-//TRIGONOMETRIC OPERATIONS
+//B)TRIGONOMETRIC OPERATIONS
 #include <stdio.h>
 #include <math.h>
 
@@ -64,7 +64,7 @@ int main() {
 
     return 0;
 }
-//ALGEBRAIC OPERATIONS
+//C)/ALGEBRAIC OPERATIONS
 #include <stdio.h>
 #include <math.h>
 
@@ -117,7 +117,7 @@ int main() {
 
     return 0;
 }
-//LOGARITHMIC OPERATIONS
+//D)LOGARITHMIC OPERATIONS
 #include <stdio.h>
 #include <math.h>
 
