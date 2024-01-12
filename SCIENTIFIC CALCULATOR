@@ -28,3 +28,39 @@ int main() {
     printf("Quotient: %.2f\n", quotient);
 
     return 0;
+//TRIGONOMETRIC OPERATIONS
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double angle;
+    double sine, cosine, tangent;
+    double arcsine, arccosine, arctangent;
+
+    // Getting input from the user
+    printf("Enter the angle in degrees: ");
+    scanf("%lf", &angle);
+
+    // Converting angle from degrees to radians
+    double radian = angle * M_PI / 180.0;
+
+    // Performing the trigonometric operations
+    sine = sin(radian);
+    cosine = cos(radian);
+    tangent = tan(radian);
+    arcsine = asin(sine);
+    arccosine = acos(cosine);
+    arctangent = atan(tangent);
+
+    // Displaying the results
+    printf("\n--- Results ---\n");
+    printf("Sine: %.4lf\n", sine);
+    printf("Cosine: %.4lf\n", cosine);
+    printf("Tangent: %.4lf\n", tangent);
+    printf("Arcsine: %.4lf\n", arcsine);
+    printf("Arccosine: %.4lf\n", arccosine);
+    printf("Arctangent: %.4lf\n", arctangent);
+
+    return 0;
+}
+
