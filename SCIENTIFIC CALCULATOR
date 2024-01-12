@@ -28,6 +28,7 @@ int main() {
     printf("Quotient: %.2f\n", quotient);
 
     return 0;
+}
 //TRIGONOMETRIC OPERATIONS
 #include <stdio.h>
 #include <math.h>
@@ -63,4 +64,91 @@ int main() {
 
     return 0;
 }
+//ALGEBRAIC OPERATIONS
+#include <stdio.h>
+#include <math.h>
 
+// Function to calculate factorial
+int factorial(int n) {
+    if (n == 0 || n == 1)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
+
+int main() {
+    int base, exponent, n;
+    double num, squareRoot, cubeRoot, nthRoot, absoluteValue;
+
+    // Getting input from the user
+    printf("Enter the base for exponentiation: ");
+    scanf("%d", &base);
+
+    printf("Enter the exponent for exponentiation: ");
+    scanf("%d", &exponent);
+
+    printf("Enter a number for square root: ");
+    scanf("%lf", &num);
+
+    printf("Enter a number for cube root: ");
+    scanf("%lf", &num);
+
+    printf("Enter the value of n for nth root: ");
+    scanf("%d", &n);
+
+    printf("Enter a number for absolute value: ");
+    scanf("%lf", &num);
+
+    // Performing the algebraic operations
+    double result = pow(base, exponent);
+    squareRoot = sqrt(num);
+    cubeRoot = cbrt(num);
+    nthRoot = pow(num, 1.0 / n);
+    absoluteValue = fabs(num);
+
+    // Displaying the results
+    printf("\n--- Results ---\n");
+    printf("Exponentiation: %.2lf\n", result);
+    printf("Square Root: %.2lf\n", squareRoot);
+    printf("Cube Root: %.2lf\n", cubeRoot);
+    printf("Nth Root: %.2lf\n", nthRoot);
+    printf("Factorial: %d\n", factorial(n));
+    printf("Absolute Value: %.2lf\n", absoluteValue);
+
+    return 0;
+}
+//LOGARITHMIC OPERATIONS
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double num;
+    double log10Value, naturalLogValue, customLogValue;
+    double base;
+
+    // Getting input from the user
+    printf("Enter a number for logarithm (base 10): ");
+    scanf("%lf", &num);
+
+    printf("Enter a number for natural logarithm (base e): ");
+    scanf("%lf", &num);
+
+    printf("Enter a number for custom base logarithm: ");
+    scanf("%lf", &num);
+
+    printf("Enter the base for custom base logarithm: ");
+    scanf("%lf", &base);
+
+    // Performing the logarithmic operations
+    log10Value = log10(num);
+    naturalLogValue = log(num);
+    customLogValue = log(num) / log(base);
+
+    // Displaying the results
+    printf("\n--- Results ---\n");
+    printf("Logarithm (base 10): %.4lf\n", log10Value);
+    printf("Natural Logarithm (base e): %.4lf\n", naturalLogValue);
+    printf("Custom Base Logarithm: %.4lf\n", customLogValue);
+
+    return 0;
+}
